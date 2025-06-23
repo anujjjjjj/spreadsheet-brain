@@ -1,0 +1,100 @@
+# Spreadsheet Brain - Demo Commands
+# Copy and paste these commands during the video demo
+
+# ========================================
+# SCENE 2: Application Startup
+# ========================================
+mvn exec:java -Dexec.mainClass="com.superjoin.spreadsheet.Main" -Dexec.args="-s 1q3-iEbNfAur8HB9zlW6-cw04KgdqWZznIi7Ublil5UI --project-id spreadsheet-brain-123456 --gemini-api-key YOUR_API_KEY"
+
+# ========================================
+# SCENE 3: Multi-Sheet Support Demo
+# ========================================
+ask Show me all sheets in this spreadsheet
+ask Show me cells in the Sales sheet
+ask Show me cells in the Employees sheet
+
+# ========================================
+# SCENE 4: Natural Language Querying
+# ========================================
+ask Find cells containing formulas
+ask What cells depend on A1
+ask Find cells with financial data
+
+# ========================================
+# SCENE 5: Impact Analysis Demo
+# ========================================
+impact Sales!B2
+deps Employees!D3
+ask What will be the impact if I change the formula in Sales!E2
+
+# ========================================
+# SCENE 6: Cross-Sheet Dependencies
+# ========================================
+ask Show me the formula in Sales!E2
+ask What cells in the Employees sheet are referenced by Sales formulas
+
+# ========================================
+# SCENE 7: Cell Updates and Live Sync
+# ========================================
+ask Update cell Sales!A1 to "Updated Product Name"
+update Sales!B2 150
+
+# ========================================
+# SCENE 8: Advanced Queries
+# ========================================
+ask Find all cells that depend on cells containing "Revenue"
+ask Show me the dependency chain for the total calculation
+
+# ========================================
+# SCENE 9: System Summary
+# ========================================
+summary
+
+# ========================================
+# BONUS: Additional Demo Commands
+# ========================================
+# If you have time, try these additional commands:
+
+# Show formulas in a specific sheet
+ask Show me all formulas in the Sales sheet
+
+# Find cells with specific patterns
+ask Find cells containing dates
+ask Find cells with numbers greater than 100
+
+# Complex dependency analysis
+ask What would happen if I change the price in Sales!B2
+ask Show me all cells that calculate totals
+
+# Cross-sheet analysis
+ask How are the Sales and Inventory sheets connected
+ask What data flows from Employees to Sales
+
+# ========================================
+# TROUBLESHOOTING COMMANDS
+# ========================================
+# If something doesn't work, try these:
+
+# Check if sheets are loaded
+list_sheets
+
+# Check specific cell
+ask Show me the value in Sales!A1
+
+# Check dependencies
+deps Sales!A1
+
+# Check impact
+impact Sales!A1
+
+# ========================================
+# DEMO NOTES
+# ========================================
+# Remember to:
+# 1. Wait for responses to appear fully
+# 2. Explain what each command does
+# 3. Point out key features
+# 4. Show cross-sheet dependencies
+# 5. Demonstrate AI understanding
+# 6. Keep professional tone
+# 7. Highlight the knowledge graph architecture 
